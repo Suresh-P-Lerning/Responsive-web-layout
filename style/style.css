@@ -1,0 +1,21 @@
+.box-container{
+    width: 800px;
+    height:500px;
+    border:1px solid green;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.box{
+    font-size: 25px;
+    border: 1px solid salmon;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 25px;
+    width: 100px;
+    height: 50px;
+
+}
