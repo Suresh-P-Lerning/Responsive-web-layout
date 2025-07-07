@@ -33,7 +33,9 @@
     width: 80%;
     display: grid;
     /* grid-template-columns: repeat(5, 1fr) 2fr; */
-    grid-template-columns: repeat(3, 200px) auto;
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-rows: 200px 1fr ;
+    /* grid-template-columns: repeat(3, 200px) auto; */
     gap: 10px;
     /* justify-content: center; */
     justify-content: center;    
@@ -70,3 +72,48 @@
     border: .5px solid gray;
 }    
 
+/* Responsive Practice */
+
+.container{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:10px
+
+
+}
+.items{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+.items img{
+    width:80%;
+}
+.items h3{
+    background-color: rgb(22, 20, 43);
+    color: aliceblue;
+    width: 100%;  
+    text-align: center;  
+}
+/* Small Device */
+@media screen and (max-width:576px){
+    .container{    
+        grid-template-columns:repeat(1, 1fr);
+    }  
+   .items img{
+        width:90%;
+    }
+}
+
+/* Medium Device */
+
+@media screen and (min-width:577px) and (max-width:768px){
+    .container{    
+    grid-template-columns:repeat(2, 1fr);
+}    
+}
