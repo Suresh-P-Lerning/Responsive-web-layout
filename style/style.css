@@ -1,3 +1,13 @@
+button{
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;    
+}
+button a{
+    text-decoration: none;
+    color: aliceblue;
+}
 .box-container{
     width: 800px;
     height:500px;
